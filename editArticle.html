@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yuxiang's blog - main page</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="style/index.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand glyphicon glyphicon-fire" href="#">(brandIcon)</a>
+                </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#" class="glyphicon glyphicon-home" title="Home"></a></li>
+                        <li><a href="#" class="glyphicon glyphicon-book" title="Articles"></a></li>
+                        <li><a href="#" class="glyphicon glyphicon-user" title="Person Information"></a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle glyphicon glyphicon-cog" title="Settings" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                        <button type="submit" class="btn btn-default" required>Submit</button>
+                    </form>
+
+                    <div class="btn-toolbar navbar-right navbar-form" role="toolbar">
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-default">Sign In</button>
+                            <button type="button" class="btn btn-default">Sign Up</button>
+                        </div>
+                    </div>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        
+        <div class="container main-content">
+            <div class="row edit-article">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="article-title">
+                        <input type="text" class="form-control" placeholder="Title" required autofocus/>
+                    </div>
+                    <div class="article-content">
+                        <textarea class="form-control" placeholder="Content" required></textarea>
+                    </div>
+                    <div class="article-buttons">
+                        <button type="submit" class="btn btn-default">Save</button>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery (nclass="form-control" requiredecessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="style/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html> 

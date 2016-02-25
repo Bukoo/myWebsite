@@ -1,0 +1,52 @@
+.main-content {
+	margin-top: 100px;
+}
+input {
+	margin-bottom: 5px;
+}
+form.navbar-form input {
+	margin-bottom: 0px;
+}
+
+/*-- index.html --*/
+
+.last-edit-date {
+	float: right;
+}
+
+/*-- signin.html --*/
+body {
+	background-color: #e7e7e7;
+}
+center {
+	margin-top:50px;
+}
+.signin-box{
+	margin-top: 40px;
+	border: 1px solid #e0e0e0;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.signin-box-head {
+	padding:25px;
+}
+.signin-box-body {
+	padding:25px;
+	background-color: #f0f0f0;
+}
+
+/*-- editArticle.html --*/
+.article-content textarea {
+	height: 700px;
+	resize: none;
+}
+.article-buttons {
+	float: right;
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.article-buttons button {
+	margin-left: 5px;
+	width: 80px;
+}
