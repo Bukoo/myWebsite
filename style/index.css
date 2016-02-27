@@ -16,10 +16,64 @@ form.navbar-form input {
 
 /*-- signin.html --*/
 body {
-	background-color: #e7e7e7;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat; 
 }
-center {
-	margin-top:50px;
+
+.vertical-tape {
+	position: fixed;
+	left: 20%;
+	width: 130px;
+	height: 100%;
+	background-color: black;
+	filter: alpha(Opacity=70);
+	-moz-opacity: 0.3;
+	opacity: 0.3;
+}
+.horizontal-tape {
+	position: fixed;
+	top: 60%;
+	width: 100%;
+	height: 130px;
+	background-color: black;
+	filter: alpha(Opacity=70);
+	-moz-opacity: 0.3;
+	opacity: 0.3;
+}
+.introduction {
+	display: inline-block;
+	color: white;
+	position: fixed;
+	top: 60%;
+	left: 30%;
+	height: 130px;
+	font-size: 30px;
+	filter: alpha(Opacity=80);
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+}
+.introduction p {
+	margin-top: 30px;
+	display: inline-block;
+	margin-right: 20px;
+}
+.introduction p:first-letter {
+	font-weight: bolder;
+	font-size: 65px;
+}
+.to-signin {
+	margin-bottom: 15px;
+	display: inline-block;
+}
+.curtain {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	/*filter: alpha(Opacity=80);
+	-moz-opacity: 0.5;
+	opacity: 0.5;*/
 }
 .signin-box{
 	margin-top: 40px;
