@@ -1,0 +1,98 @@
+@keyframes ver-tape {
+	0% {left: -10%;}
+	100% {left: 20%;}
+}
+@-webkit-keyframes ver-tape {
+	0% {left: -10%;}
+	100% {left: 20%;}
+}
+#vertical-tape {
+	-moz-animation: ver-tape 1s normal ease-out; /* Firefox */
+	-webkit-animation: ver-tape 1s normal ease-out; /* Chrome/Safari */
+	-ms-animation: ver-tape 1s normal ease-out; /* IE */
+	-o-animation: ver-tape 1s normal ease-out; /* Opera */
+	animation: ver-tape 1s normal ease-out;
+	animation-fill-mode: forwards;
+}
+@keyframes hor-tape {
+	0% {bottom: -10%;}
+	70% {bottom: 16%;}
+	100% {bottom: 17%;}
+}
+@-webkit-keyframes hor-tape {
+	0% {bottom: -10%;}
+	70% {bottom: 16%;}
+	100% {bottom: 17%;}
+}
+#horizontal-tape {
+	-moz-animation: hor-tape 1s normal ease-out; /* Firefox */
+	-webkit-animation: hor-tape 1s normal ease-out; /* Chrome/Safari */
+	-ms-animation: hor-tape 1s normal ease-out; /* IE */
+	-o-animation: hor-tape 1s normal ease-out; /* Opera */
+	animation: hor-tape 1s normal ease-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes twinkling {
+    0% {opacity: 1;}
+    20% {opacity: 1;}
+    30% {opacity: 0.9;}
+    60% {opacity: 0.3;}
+    90% {opacity: 0.9;}
+    100% {opacity: 1;}
+}
+@-webkit-keyframes twinkling {
+    0% {opacity: 1;}
+    20% {opacity: 1;}
+    30% {opacity: 0.9;}
+    60% {opacity: 0.3;}
+    90% {opacity: 0.9;}
+    100% {opacity: 1;}
+}
+.twinkling {
+	/*-- animation --*/
+	-moz-animation: twinkling 2s infinite ease-in-out; /* Firefox */
+	-webkit-animation: twinkling 2s infinite ease-in-out; /* Chrome/Safari */
+	-ms-animation: twinkling 2s infinite ease-in-out; /* IE */
+	-o-animation: twinkling 2s infinite ease-in-out; /* Opera */
+	animation: twinkling 2s infinite ease-in-out;
+	animation-delay: 3s;
+}
+@keyframes para-emerge {
+	0% {opacity: 0;}
+    100% {opacity: 0.8;}
+}
+@-webkit-keyframes para-emerge {
+	0% {opacity: 0;}
+    100% {opacity: 0.8;}
+}
+
+.para-emerge {
+	/*-- animation --*/
+	-moz-animation: para-emerge 2s normal ease-out; /* Firefox */
+	-webkit-animation: para-emerge 2s normal ease-out; /* Chrome/Safari */
+	-ms-animation: para-emerge 2s normal ease-out; /* IE */
+	-o-animation: para-emerge 2s normal ease-out; /* Opera */
+	animation: para-emerge 2s normal ease-out;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+}
+
+@keyframes fade-in {
+	0% {opacity: 0;	margin-top: 50%;}
+	40% {opacity: 0.8; margin-top: 31%}
+	100% {opacity:1; margin-top: 33%;}
+}
+@-webkit-keyframes fade-in {
+	0% {opacity: 0;	margin-top: 50%;}
+	40% {opacity: 0.8; margin-top: 31%}
+	100% {opacity:1; margin-top: 33%;}
+}
+.fade-in {
+	-moz-animation: fade-in 0.6s normal linear; /* Firefox */
+	-webkit-animation: fade-in 0.6s normal linear; /* Chrome/Safari */
+	-ms-animation: fade-in 0.6s normal linear; /* IE */
+	-o-animation: fade-in 0.6s normal linear; /* Opera */
+	animation: fade-in 0.6s normal linear;
+	animation-fill-mode: forwards;
+}

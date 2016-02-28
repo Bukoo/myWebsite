@@ -17,66 +17,68 @@ form.navbar-form input {
 /*-- signin.html --*/
 body {
 	background-image: url(../images/background.jpg);
+	background-position: 50% 50%;
 	background-repeat: no-repeat; 
+
 }
 
-.vertical-tape {
+#vertical-tape {
 	position: fixed;
-	left: 20%;
+	left: -130px;
 	width: 130px;
-	height: 100%;
+	height: 10000px;
 	background-color: black;
 	filter: alpha(Opacity=70);
 	-moz-opacity: 0.3;
 	opacity: 0.3;
 }
-.horizontal-tape {
+#horizontal-tape {
 	position: fixed;
-	top: 60%;
-	width: 100%;
+	bottom: -130px;
+	width: 10000px;
 	height: 130px;
 	background-color: black;
 	filter: alpha(Opacity=70);
 	-moz-opacity: 0.3;
 	opacity: 0.3;
 }
-.introduction {
+#introduction {
 	display: inline-block;
 	color: white;
-	position: fixed;
+	position: absolute;
 	top: 60%;
 	left: 30%;
 	height: 130px;
 	font-size: 30px;
-	filter: alpha(Opacity=80);
-	-moz-opacity: 0.8;
-	opacity: 0.8;
+	filter: alpha(Opacity=0);
+	-moz-opacity: 0;
+	opacity: 0;
 }
-.introduction p {
+#introduction p {
 	margin-top: 30px;
 	display: inline-block;
 	margin-right: 20px;
 }
-.introduction p:first-letter {
+#introduction p:first-letter {
 	font-weight: bolder;
 	font-size: 65px;
 }
-.to-signin {
+
+
+#to-signin {
 	margin-bottom: 15px;
 	display: inline-block;
 }
-.curtain {
-	display: none;
+#curtain {
+	visibility: hidden;
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	background-color: black;
-	/*filter: alpha(Opacity=80);
-	-moz-opacity: 0.5;
-	opacity: 0.5;*/
+	opacity: 0.5;
 }
 .signin-box{
-	margin-top: 40px;
+	visibility: hidden;
 	border: 1px solid #e0e0e0;
 	background-color: white;
 	border-radius: 5px;

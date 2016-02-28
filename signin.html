@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
     <head>
         <meta charset="utf-8">
@@ -9,23 +9,24 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="style/index.css">
+        <link rel="stylesheet" type="text/css" href="style/animation.css">
     </head>
     <body>
-    	<div class="tape">
-    		<div class="vertical-tape"></div>
-    		<div class="horizontal-tape"></div>
-    		<div class="introduction">
-    			<p>Welcome to Bukoo's Blog :).
-    			   You may sign in now.</p>
-    			<button class="btn btn-default to-signin">SIGN IN</button>
-    		</div>
+    	<div id="tape">
+    		<div id="vertical-tape"></div>
+    		<div id="horizontal-tape"></div>
+    		<div id="introduction" class="para-emerge">
+                <p>Welcome to Bukoo's Blog :).
+                   You may sign in now.</p>
+                <button class="btn btn-default twinkling" id="to-signin">SIGN IN</button>
+            </div>
     		
     	</div>
-    	<div class="curtain"></div>
+    	<div id="curtain"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
-                    <div class="row signin-box">
+                    <div class="row signin-box" id="signin-box">
                         <form class="form-signin" role="form">
                             <div class="signin-box-head">
                                 <h2>Login to our site.</h2>
@@ -45,5 +46,12 @@
         <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="style/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- My Javascripts -->
+        <script type="text/javascript" src="js/addClassName.js"></script>
+        <script type="text/javascript" src="js/getElementsByClassName.js"></script>
+        <script type="text/javascript" src="js/addLoadFunction.js"></script>
+        <script type="text/javascript" src="js/signin.js"></script>
+        
     </body>
 </html> 
