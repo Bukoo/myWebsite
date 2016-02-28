@@ -2,7 +2,7 @@
 	margin-top: 100px;
 }
 input {
-	margin-bottom: 5px;
+	margin-bottom: 7px;
 }
 form.navbar-form input {
 	margin-bottom: 0px;
@@ -17,11 +17,14 @@ form.navbar-form input {
 /*-- signin.html --*/
 body {
 	background-image: url(../images/background.jpg);
-	background-position: 50% 50%;
 	background-repeat: no-repeat; 
-
 }
 
+.remember-me span {
+	position: relative;
+	left: 4px;
+	bottom: 2px;
+}
 #vertical-tape {
 	position: fixed;
 	left: -130px;
@@ -46,7 +49,7 @@ body {
 	display: inline-block;
 	color: white;
 	position: absolute;
-	top: 60%;
+	bottom: 18%;
 	left: 30%;
 	height: 130px;
 	font-size: 30px;
@@ -65,7 +68,7 @@ body {
 }
 
 
-#to-signin {
+#to-signin, #to-signup {
 	margin-bottom: 15px;
 	display: inline-block;
 }
@@ -77,17 +80,17 @@ body {
 	background-color: black;
 	opacity: 0.5;
 }
-.signin-box{
-	visibility: hidden;
+.sign-box {
+	display: none;
 	border: 1px solid #e0e0e0;
 	background-color: white;
 	border-radius: 5px;
 }
 
-.signin-box-head {
+.sign-box-head {
 	padding:25px;
 }
-.signin-box-body {
+.sign-box-body {
 	padding:25px;
 	background-color: #f0f0f0;
 }

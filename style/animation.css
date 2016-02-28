@@ -1,10 +1,10 @@
 @keyframes ver-tape {
 	0% {left: -10%;}
-	100% {left: 20%;}
+	100% {left: 17%;}
 }
 @-webkit-keyframes ver-tape {
 	0% {left: -10%;}
-	100% {left: 20%;}
+	100% {left: 17%;}
 }
 #vertical-tape {
 	-moz-animation: ver-tape 1s normal ease-out; /* Firefox */
