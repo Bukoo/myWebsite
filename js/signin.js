@@ -107,21 +107,24 @@ function ajax(argument) {
 
 	var signinButton = document.getElementById('signin');
 // submit sign in information
-	signinButton.onsubmit = function() {
+	signinButton.onclick = function() {
 		if (window.XMLHttpRequest) {
 			var xhr = new XMLHttpRequest();
 		} else {
 			var xhr = new ActiveXObject('Microsoft.XMLHttp');
 		}
 	// Ajax
-		xhr.open('POST', 'temp.php');
+		//xhr.open('POST', 'http://bukoo.byethost7.com/test.html');
+		xht.open('POST', 'tmp.php');
 		xhr.setRequestHeader('Content-Type', 'application/json');
+		//xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 		var data = 'username=' + document.getElementById('signin-username').value
 					+ '&password' + document.getElementById('signin-password').value;
 		xhr.send(data);
 		xhr.onreadystatechange = function() {
 			if (xhr.readyState === 4) {
 				if (xhr.status === 200) {
+				// json
 					var data = JSON.parse(xhr.responseText);
 					if (data.success) {
 					// jump to index.html
@@ -131,6 +134,13 @@ function ajax(argument) {
 						var error = document.getElementById('fail-to-signin');
 						error.innerHTML = 'Invalid username or password. Please input again.'
 					}
+				// string
+					/*if (xhr.responseText === '0') {
+						window.location.href = 'index.html';
+					} else {
+						var error = document.getElementById('fail-to-signin');
+						error.innerHTML = xhr.responseText.substring(1);
+					}*/
 				}
 			}
 		}
@@ -169,3 +179,4 @@ function ajax(argument) {
 
 addLoadFunction(animationShow);
 addLoadFunction(formatCheck);
+addLoadFunction(ajax);
