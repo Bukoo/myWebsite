@@ -8,10 +8,12 @@
 
         <!-- Bootstrap -->
         <link rel="stylesheet" type="text/css" href="style/bootstrap/css/bootstrap.min.css">
+        <!-- My stylesheet -->
         <link rel="stylesheet" type="text/css" href="style/index.css">
         <link rel="stylesheet" type="text/css" href="style/animation.css">
     </head>
     <body>
+    <!-- sliding tapes -->
     	<div id="tape">
     		<div id="vertical-tape"></div>
     		<div id="horizontal-tape"></div>
@@ -25,8 +27,11 @@
                 
             </div>
     	</div>
+    <!-- black background -->
     	<div id="curtain"></div>
+
         <div class="container">
+        <!-- signUp box -->
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="sign-box" id="signin-box">
@@ -36,11 +41,15 @@
                                 <h6>Enter your username and password to login in.</h6>
                             </div>
                             <div class="sign-box-body">
-                                <input type="text" class="form-control" placeholder="Username" required autofocus/>
-                                <input type="password" class="form-control" placeholder="Password" required/>
+                                <input type="text" class="form-control" name="username" id="signin-username" placeholder="Username" required autofocus/>
+                                <div class="error-msg" id="error-msg-signin-username"></div>
+
+                                <input type="password" class="form-control" name="password" id="signin-password" placeholder="Password" required/>
+                                <div class="error-msg" id="error-msg-signin-password"></div>
+
                                 <div class="remember-me">
                                     <input type="checkbox" name="rememberMe"></input><span>Remember Me</span>
-                                    <button class="btn btn-success btn-block">Login In</button>
+                                    <button class="btn btn-success btn-block" type="submit" id="signin">Login In</button>
                                 </div>
                                 
                             </div>
@@ -49,6 +58,7 @@
                 </div>
             </div>
 
+        <!-- signIn box -->
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <div class="sign-box" id="signup-box">
@@ -58,10 +68,16 @@
                                 <h6>Please input username, email and password.</h6>
                             </div>
                             <div class="sign-box-body">
-                                <input type="text" class="form-control" placeholder="Username" required autofocus></input>
-                                <input type="text" class="form-control" placeholder="Email" required></input>
-                                <input type="password" class="form-control" placeholder="Password" required=""></input>
-                                <button class="btn btn-success btn-block">Sign Up</button>
+                                <input type="text" class="form-control" name="username" id="signup-username" placeholder="Username" required autofocus></input>
+                                <div class="error-msg" id="error-msg-signup-username"></div>
+
+                                <input type="text" class="form-control" name="email" id="signup-email" placeholder="Email" required></input>
+                                <div class="error-msg" id="error-msg-signup-email"></div>
+
+                                <input type="password" class="form-control" name="password" id="signup-password" placeholder="Password" required=""></input>
+                                <div class="error-msg" id="error-msg-signup-password"></div>
+
+                                <button class="btn btn-success btn-block" type="submit" id="signup">Sign Up</button>
                             </div>
                         </form>
                     </div>

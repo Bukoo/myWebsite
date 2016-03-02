@@ -2,7 +2,7 @@
 	margin-top: 100px;
 }
 input {
-	margin-bottom: 7px;
+	margin-bottom: 10px;
 }
 form.navbar-form input {
 	margin-bottom: 0px;
@@ -93,6 +93,11 @@ body {
 .sign-box-body {
 	padding:25px;
 	background-color: #f0f0f0;
+}
+
+.error-msg {
+	color: orange;
+	margin: -6px 0 6px 0;
 }
 
 /*-- editArticle.html --*/
