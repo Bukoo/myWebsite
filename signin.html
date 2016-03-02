@@ -41,6 +41,8 @@
                                 <h6>Enter your username and password to login in.</h6>
                             </div>
                             <div class="sign-box-body">
+                            	<div class="error-msg" id="fail-to-signin"></div>
+
                                 <input type="text" class="form-control" name="username" id="signin-username" placeholder="Username" required autofocus/>
                                 <div class="error-msg" id="error-msg-signin-username"></div>
 
@@ -68,7 +70,7 @@
                                 <h6>Please input username, email and password.</h6>
                             </div>
                             <div class="sign-box-body">
-                                <input type="text" class="form-control" name="username" id="signup-username" placeholder="Username" required autofocus></input>
+                                <input type="text" class="form-control" name="username" id="signup-username" placeholder="Username-letters, numbers and underscores only" required autofocus></input>
                                 <div class="error-msg" id="error-msg-signup-username"></div>
 
                                 <input type="text" class="form-control" name="email" id="signup-email" placeholder="Email" required></input>

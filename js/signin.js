@@ -34,7 +34,7 @@ function signUpBoxShow() {
 
 	var signinBox = document.getElementById('signup-box');
 	signinBox.style.display = 'block';
-	
+
 	addClassName(signinBox,'fade-in');
 }
 
@@ -101,5 +101,71 @@ function emailFormatCheck(elementId) {
 		}
 	}
 }
+function ajax(argument) {
+// sign in verification
+	if (!document.getElementById) return;
+
+	var signinButton = document.getElementById('signin');
+// submit sign in information
+	signinButton.onsubmit = function() {
+		if (window.XMLHttpRequest) {
+			var xhr = new XMLHttpRequest();
+		} else {
+			var xhr = new ActiveXObject('Microsoft.XMLHttp');
+		}
+	// Ajax
+		xhr.open('POST', 'temp.php');
+		xhr.setRequestHeader('Content-Type', 'application/json');
+		var data = 'username=' + document.getElementById('signin-username').value
+					+ '&password' + document.getElementById('signin-password').value;
+		xhr.send(data);
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState === 4) {
+				if (xhr.status === 200) {
+					var data = JSON.parse(xhr.responseText);
+					if (data.success) {
+					// jump to index.html
+						window.location.href = 'index.html';
+					} else {
+					// display error message
+						var error = document.getElementById('fail-to-signin');
+						error.innerHTML = 'Invalid username or password. Please input again.'
+					}
+				}
+			}
+		}
+	}
+
+// sign up existing username verification
+	var signupUsername = document.getElementById('signup-username');
+	signupUsername.onblur = function() {
+	// get element for displaying error message about username
+		var error = document.getElementById('error-msg-signup-username');
+	// while user has input username and its format is correct
+		if (error.innerHTML === '' && signupUsername.value.length !== 0) {
+			if (window.XMLHttpRequest) {
+				var xhr = new XMLHttpRequest();
+			} else {
+				var xhr = new ActiveXObject('Microsoft.XMLHttp');
+			}
+			xhr.open('GET', 'temp.php?username=' + document.getElementById('signup-username').value);
+			xhr.send();
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) {
+						var data = JSON.parse(xhr.responseText);
+					// username exsits
+						if (!data.success) {
+						// display error message
+							error.innerHTML = data.msg;
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
+
 addLoadFunction(animationShow);
 addLoadFunction(formatCheck);
