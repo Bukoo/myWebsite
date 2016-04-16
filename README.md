@@ -18,4 +18,5 @@
 9.testing
 10.fjsfsdf
 11.  for  username test   2016-04-16
+12  why can not sublime in linux using zhongwen
 ###为自己加油~提高效率！
